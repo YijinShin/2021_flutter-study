@@ -100,7 +100,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('FriendlyChat'),
+          title: Text('FriendlyChat'),
           elevation:  0.0,
         ),
         body: Column(
@@ -118,7 +118,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
             ),
             Container(
               decoration:
-                  BoxDecoration(color: Theme.of(context).cardColor), // NEW
+              BoxDecoration(color: Theme.of(context).cardColor), // NEW
               child: _buildTextComposer(),
             ),
           ],
@@ -142,7 +142,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                   });
                 },
                 onSubmitted:
-                    _handleSubmitted, //text를 보내면 _handleSubmitted 를 사용한다.
+                _handleSubmitted, //text를 보내면 _handleSubmitted 를 사용한다.
                 decoration: InputDecoration.collapsed(
                     hintText: 'Send a message.'), //아무것도 입력하지 않았을 때 보여지는 문자.
                 focusNode: _focusNode, // focus node 설정
