@@ -10,7 +10,7 @@ Simple counting app using Provider
 > > <code>
 > >   class CounterProvider extends NotifireProvider{
 > >     int _count = 0;
-> >     int get count => _count; //Consumer widget을 사용하면 필요없음. provider.of 사용하면 필요할수도
+> >     int get count => _count; 
 > >   }
 > > </code>
 > > <pre>
@@ -42,7 +42,7 @@ Simple counting app using Provider
 > > >     ...
 > > >     child : Consumer<CounterProvider>(
 > > >      builder: (context,counter, child) { 
-> > >       return Text('count: ${counter.counter}');
+> > >       return Text('count: ${counter.count}');
 > > >      },
 > > >     ),
 > > >     ...
